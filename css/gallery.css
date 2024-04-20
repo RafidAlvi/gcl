@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    width: auto;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    color: #050748 !important;
+    height: auto;
+    position: relative;
+    background: linear-gradient(90deg, #ffffff9c 0%, #28c2ff3d 35%, #00d5ff38 100%);
+
+  }
+
+
+
+  .upbt{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px 5px rgba(56, 58, 58, 0.404);
+    transition: ease-in-out 0.3s;
+    background-color: white;
+
+  }
+  .upbt:hover{
+    transform: scale(1.3);
+    transition: ease-in-out 0.3s;
+    z-index: 5;
+    margin-top: 5px;
+  }
+
+  
+  
+  
+  header {
+   
+    width: 100%;
+    height: auto;
+    background: linear-gradient(180deg, #ffffff00 50%, #5b80cf 90% );
+
+    background-size: cover;
+    /* Adjust fit as needed */
+    background-position: center;
+    padding: 15px 30px;
+    z-index: -50;
+  
+  }
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+
+  .navbar {
+    background: transparent;
+    position: fixed;  /* Fix the navbar to the top */
+    top: 0;
+    overflow: hidden;
+    z-index: 5;
+    transition: background-color 0.3s ease-in-out;  
+  
+  }  @media (max-width: 991px) {  /* Adjust breakpoint as needed */
+    .navbar {
+      background-color: #f0f0f0; /* Background color after scroll */
+    }
+  }
+  
+  nav {
+    /* Base styles for the navbar */
+    background-color: #fff; /* Initial white background */
+    position: fixed;  /* Fix the navbar to the top */
+    top: 0;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out;  /* Smooth transition */
+}
+
+.navimg{
+  margin-left: 30px;
+}
+
+nav.scrolled {
+    background-color: #f0f0f0; /* Background color after scroll */
+    box-shadow: 10px 10px 5px 5px rgba(165, 184, 190, 0.404);
+
+    .navimg{
+      width: 120px;
+      margin-left: 30px;
+      padding: 0;
+    }
+
+
+}
+  .navbar li {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    margin-left: 20px;
+  
+  }
+  .navbar li :hover{
+    font-size: 18px;
+    font-weight: 700;
+    transition: ease-out 0.3s linear;
+    color: #046324;
+
+  
+  }
+   .active {
+    font-size: 18px;
+  }
+  .callbt {
+  
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(90deg, #07662c 0%, #068197 80%);
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 10px;
+    margin-left: 25px;
+    box-shadow: 0 10px 15px 0 rgba(56, 0, 189, .2);
+    transition: 1.2s cubic-bezier(.17, .85, .438, .99);
+  
+  }
+  
+  .callbt:hover {
+  
+    scale: 1.15;
+    transition: 1.2s cubic-bezier(.17, .85, .438, .99);
+  
+  }
+  
+  .reqbtn a {
+    position: relative;
+  
+    width: 150px;
+    height: 50px;
+    background: linear-gradient(90deg, #17aa12 20%, #078b1d 65%, #10534a 100%);
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 3px;
+    margin-left: 10px;
+    display: inline-block;
+    box-shadow: 0 10px 15px 0 rgba(56, 0, 189, .2);
+    /* Transition for background color */
+    transition: background-color 0.5s ease-in-out;
+    font-size: 18px;
+    position: relative;
+    overflow: hidden;
+    transition: 1.2s cubic-bezier(.17, .85, .438, .99);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    z-index: 1;
+  }
+  
+  .reqbtn a::after {
+    content: '';
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.281);
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    top: -10%;
+    right: -130px;
+    z-index: 10;
+    transition: 1.2s cubic-bezier(.17, .85, .438, .99);
+  
+  
+  }
+  
+  
+  .reqbtn a:hover::after {
+    right: -80px;
+  
+  
+  }
+  
+  
+  /* .reqbtn:hover {
+      background: linear-gradient(90deg, #31285d 0%, #3939ac 25%, #1d76c9 54%);
+    } */
+  
+
+  
+  
+  
+  
+  
+  header .container {
+    margin-bottom: 70px;
+    padding: 120px 10px 80px 10px;
+  
+  }
+  
+  
+  
+  
+  .contents-1 {
+  
+  padding-top: 20px;
+    margin: 0;
+  
+  
+  }
+  
+  
+  .col-lg-6 {
+  
+    padding: 0;
+
+  }
+  
+
+  header .container img {
+    box-shadow: 10px 10px 5px rgba(25, 114, 143, 0.404);
+    z-index: 2;
+    position: relative;
+    margin-top: 100px;
+
+  }
+
+
+  header .container h1 {
+  
+    line-height: 92px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-family: Poppins, sans-serif;
+    color: #050748;
+  
+        @media (min-width: 600px){
+          font-size: 80px;
+          font-weight: 700;
+
+        }
+        @media (max-width: 800px){
+          font-size: 40px;
+          line-height: 50px;
+          padding: 0;
+          text-align: center;
+          font-weight: 900;
+  
+        }
+  }
+  
+  header .container p {
+    width: 100%;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 35px;
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+  }
+  
+  
+  .viewcbt a {
+    width: 220px;
+    height: 50px;
+    background: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 10px;
+    margin-left: 10px;
+    display: inline-block;
+    box-shadow: 0 10px 15px 0 rgba(56, 0, 189, .2);
+    /* Transition for background color */
+    transition: background-color 0.5s ease-in-out;
+    font-size: 18px;
+    position: relative;
+    overflow: hidden;
+    transition: 1.2s cubic-bezier(.17, .85, .438, .99);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    z-index: 1;
+        margin-bottom: 40px;
+
+  }
+  
+  .viewcbt a::after {
+    content: '';
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.281);
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    top: -10%;
+    right: -130px;
+    z-index: 10;
+    transition: 1.2s cubic-bezier(.17, .85, .438, .99);
+  
+  
+  }
+  
+  
+  .viewcbt a:hover::after {
+    right: -80px;
+  
+  
+  }
+
+  iframe{
+   height: 100%;
+   width: 100%;
+   padding: 15px;
+   
+  }
+
+
+
+
+
+
+
+
+
+
+  .slide{
+    width: 100%;
+    height: auto;
+    background-image: url("../img/Prostokąt\ 4.png");
+    background-size: cover;
+    /* Adjust fit as needed */
+    background-position: center;
+    margin-bottom: 50px;    color: white;
+    padding-top: 30px ;
+    text-align: center;
+
+}
+.slide h2{
+    padding: 5px 20px;
+    margin-bottom: 20px;
+}
+.slide h6{
+    padding: 5px 20px;
+    margin: 0;
+}
+
+
+.slide .owl-item img{
+  margin: 0;
+
+}
+
+.owl-theme .owl-nav.disabled+.owl-dots {
+  margin-top: 30px;
+}
+
+
+
+.brochuresec{
+  width: 100%;
+  height: 100vh;
+
+
+}
+
+
+.brochuresec .container{
+  width: 100%;
+  height: 100vh;
+
+
+}
