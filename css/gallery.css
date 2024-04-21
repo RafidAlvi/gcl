@@ -49,7 +49,7 @@
     background-size: cover;
     /* Adjust fit as needed */
     background-position: center;
-    padding: 15px 30px;
+    padding: 15px 10px;
     z-index: -50;
   
   }
@@ -228,9 +228,26 @@ nav.scrolled {
   
   
   header .container {
-    margin-bottom: 70px;
-    padding: 120px 10px 80px 10px;
-  
+
+    margin: 10px 10px 20px 10px;
+    padding: 80px 30px 20px 30px;
+    max-width: max-content;
+
+    @media (max-width: 991px) {  /* Adjust breakpoint as needed */
+       
+      padding: 80px 0px 20px 0px;
+      margin: 10px 0px 20px 0px; 
+
+      header{
+        padding: 0px 0px 0px 0px;
+
+      }
+      
+
+    }
+
+
+
   }
   
   
@@ -367,30 +384,58 @@ nav.scrolled {
     /* Adjust fit as needed */
     background-position: center;
     margin-bottom: 50px;    color: white;
-    padding-top: 30px ;
+    padding-top: 20px ;
     text-align: center;
+    @media (max-width: 991px) {  /* Adjust breakpoint as needed */
+      padding-top: 40px ;
+
+      padding-bottom: 100px;
+  
+    
+    }
 
 }
+
+
+
 .slide h2{
     padding: 5px 20px;
     margin-bottom: 20px;
+    color:#096FB5;
+
 }
-.slide h6{
+.slide span{
     padding: 5px 20px;
-    margin: 0;
+    margin: 0;    color:#094c79;
+    margin-top: 40px;
+
 }
 
 
 .slide .owl-item img{
   margin: 0;
+  height: 70vh;
+  width: 100%;
+  object-fit: cover;
 
+  @media (max-width: 991px) {  /* Adjust breakpoint as needed */
+    height: 40vh;
+  margin-top: 40px;
+
+  
+  }
 }
 
 .owl-theme .owl-nav.disabled+.owl-dots {
-  margin-top: 30px;
+  margin-top: 40px;
+  @media (max-width: 991px) {  /* Adjust breakpoint as needed */
+
+  }
 }
 
-
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #1a156b;
+}
 
 .brochuresec{
   width: 100%;
